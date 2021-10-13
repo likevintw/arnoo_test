@@ -49,7 +49,8 @@ def run_arnoo_accuracy_test(
         monitor)
 
     structure = arnoo_request_handler.ArnooRequestStructure()
-    structure.run_arnoo_accuracy_test_1012(handler)
+    structure.run_arnoo_accuracy_test(handler)
+
 def run_package_positive():
     run_arnoo_accuracy_test(
         project_name="package_positive",
@@ -58,6 +59,7 @@ def run_package_positive():
         image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/package_positive.txt",
         result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
         monitor=True)
+
 def run_package_negative():
     run_arnoo_accuracy_test(
         project_name="package_negative",
@@ -66,6 +68,7 @@ def run_package_negative():
         image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/package_negative.txt",
         result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
         monitor=True)
+
 def run_pet_positive():
     run_arnoo_accuracy_test(
         project_name="pet_positive",
@@ -74,6 +77,7 @@ def run_pet_positive():
         image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/pet_positive.txt",
         result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
         monitor=True)
+
 def run_pet_negative():
     run_arnoo_accuracy_test(
         project_name="pet_negative",
@@ -82,6 +86,7 @@ def run_pet_negative():
         image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/pet_negative.txt",
         result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
         monitor=True)
+
 def run_human_positive():
     run_arnoo_accuracy_test(
         project_name="human_positive",
@@ -90,6 +95,7 @@ def run_human_positive():
         image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/human_positive.txt",
         result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
         monitor=True)
+
 def run_human_negative():
     run_arnoo_accuracy_test(
         project_name="human_negative",
@@ -98,6 +104,7 @@ def run_human_negative():
         image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/human_negative.txt",
         result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
         monitor=True)
+
 def run_vehicle_positive():
     run_arnoo_accuracy_test(
         project_name="vehicle_positive",
@@ -106,6 +113,7 @@ def run_vehicle_positive():
         image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/vehicle_positive.txt",
         result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
         monitor=True)
+        
 def run_vehicle_negative():
     run_arnoo_accuracy_test(
         project_name="vehicle_negative",
