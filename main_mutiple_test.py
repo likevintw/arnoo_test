@@ -79,4 +79,4 @@ if __name__ == '__main__':
     run_mutiple_test(
         algorithm_name="mutiple",
         project_name="mutiple",
-        image_url_list_path="../input/image_url/mutiple.txt")
+        image_url_list_path="../output/image_url/mutiple.txt")

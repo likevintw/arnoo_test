@@ -82,28 +82,28 @@ def specific_threshold(value=0.7):
     run_accuracy_threshold_test(
         algorithm_name="vehicle",
         project_name="vehicle_positive",
-        image_url_list_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/vehicle_positive.txt",
+        image_url_list_path="../output/image_url/vehicle_positive.txt",
         threshold=threshold,
         monitor=True)
     # Package
     run_accuracy_threshold_test(
         algorithm_name="package",
         project_name="package_positive",
-        image_url_list_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/package_positive.txt",
+        image_url_list_path="../output/image_url/package_positive.txt",
         threshold=threshold,
         monitor=True)
     # Human
     run_accuracy_threshold_test(
         algorithm_name="human",
         project_name="human_positive",
-        image_url_list_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/human_positive.txt",
+        image_url_list_path="../output/image_url/human_positive.txt",
         threshold=threshold,
         monitor=True)
     # Pet
     run_accuracy_threshold_test(
         algorithm_name="pet",
         project_name="pet_positive",
-        image_url_list_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/pet_positive.txt",
+        image_url_list_path="../output/image_url/pet_positive.txt",
         threshold=threshold,
         monitor=True)
 
