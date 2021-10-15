@@ -79,4 +79,4 @@ if __name__ == '__main__':
     run_mutiple_test(
         algorithm_name="mutiple",
         project_name="mutiple",
-        image_url_list_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/mutiple.txt")
+        image_url_list_path="../input/image_url/mutiple.txt")

@@ -28,6 +28,8 @@ IMAGE_URL = {
     "vehicle": ""
 }
 
+RESULT_FILE_PATH = "../output/accuracy_result"
+
 
 def run_arnoo_accuracy_test(
     project_name,
@@ -49,94 +51,103 @@ def run_arnoo_accuracy_test(
         monitor)
 
     structure = arnoo_request_handler.ArnooRequestStructure()
-    structure.run_arnoo_accuracy_test(handler)
+    structure.run_arnoo_accuracy_test_1012(handler)
+
 
 def run_package_positive():
     run_arnoo_accuracy_test(
         project_name="package_positive",
         service_url=ARNOO_URL,
         ai_id=AI_ID["package"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/package_positive.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/package_positive.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
+
 
 def run_package_negative():
     run_arnoo_accuracy_test(
         project_name="package_negative",
         service_url=ARNOO_URL,
         ai_id=AI_ID["package"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/package_negative.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/package_negative.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
+
 
 def run_pet_positive():
     run_arnoo_accuracy_test(
         project_name="pet_positive",
         service_url=ARNOO_URL,
         ai_id=AI_ID["pet"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/pet_positive.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/pet_positive.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
+
 
 def run_pet_negative():
     run_arnoo_accuracy_test(
         project_name="pet_negative",
         service_url=ARNOO_URL,
         ai_id=AI_ID["pet"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/pet_negative.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/pet_negative.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
+
 
 def run_human_positive():
     run_arnoo_accuracy_test(
         project_name="human_positive",
         service_url=ARNOO_URL,
         ai_id=AI_ID["human"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/human_positive.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/human_positive.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
+
 
 def run_human_negative():
     run_arnoo_accuracy_test(
         project_name="human_negative",
         service_url=ARNOO_URL,
         ai_id=AI_ID["human"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/human_negative.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/human_negative.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
+
 
 def run_vehicle_positive():
     run_arnoo_accuracy_test(
         project_name="vehicle_positive",
         service_url=ARNOO_URL,
         ai_id=AI_ID["vehicle"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/vehicle_positive.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/vehicle_positive.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
-        
+
+
 def run_vehicle_negative():
     run_arnoo_accuracy_test(
         project_name="vehicle_negative",
         service_url=ARNOO_URL,
         ai_id=AI_ID["vehicle"],
-        image_url_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_image_url/vehicle_negative.txt",
-        result_file_path="/mnt/c/Users/LDS/Desktop/workingspace/leedarson_workingspace/temp/arnoo_accuracy_result",
+        image_url_file_path="../output/image_url/vehicle_negative.txt",
+        result_file_path=RESULT_FILE_PATH,
         monitor=True)
+
 
 if __name__ == '__main__':
 
-    # Package 
-    run_package_positive()
-    run_package_negative()
-
-    # Pet 
+    # Pet
     run_pet_positive()
     run_pet_negative()
 
-    # Human 
+    # Human
     run_human_positive()
     run_human_negative()
 
     # vehicle
     run_vehicle_positive()
     run_vehicle_negative()
+
+    # Package
+    run_package_positive()
+    run_package_negative()
