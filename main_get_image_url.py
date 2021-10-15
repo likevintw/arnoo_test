@@ -27,7 +27,7 @@ REMOVE_KEYWORDS = ["aws", "txt", "NG", "xlsx", "git"]
 
 
 def run_package_positive():
-    path = "../input/arnoo_test_package"
+    path = "../input/package"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
@@ -38,7 +38,7 @@ def run_package_positive():
 
 
 def run_package_negative():
-    path = "../input/arnoo_test_package"
+    path = "../input/package"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
@@ -49,7 +49,7 @@ def run_package_negative():
 
 
 def run_human_positive():
-    path = "../input/arnoo_test_human"
+    path = "../input/human"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
@@ -60,7 +60,7 @@ def run_human_positive():
 
 
 def run_human_negative():
-    path = "../input/arnoo_test_human"
+    path = "../input/human"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
@@ -71,7 +71,7 @@ def run_human_negative():
 
 
 def run_pet_positive():
-    path = "../input/arnoo_test_pet"
+    path = "../input/pet"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
@@ -82,7 +82,7 @@ def run_pet_positive():
 
 
 def run_pet_negative():
-    path = "../input/arnoo_test_pet"
+    path = "../input/pet"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
@@ -93,7 +93,7 @@ def run_pet_negative():
 
 
 def run_vehicle_positive():
-    path = "../input/arnoo_test_vehicle"
+    path = "../input/vehicle"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
@@ -104,7 +104,7 @@ def run_vehicle_positive():
 
 
 def run_vehicle_negative():
-    path = "../input/arnoo_test_vehicle"
+    path = "../input/vehicle"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
