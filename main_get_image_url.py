@@ -27,24 +27,24 @@ REMOVE_KEYWORDS = ["aws", "txt", "NG", "xlsx", "git"]
 
 
 def run_package_positive():
-    path = "../input/package"
+    path = "../input/package/"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "Positive"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Package/",
+        replace_add="http://192.168.5.130/upload/Package",
         export_file_path="../output/image_url/package_positive.txt")
 
 
 def run_package_negative():
-    path = "../input/package"
+    path = "../input/package/"
     get_image_url(
         input_folder_path=path,
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "Negative"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Package/",
+        replace_add="http://192.168.5.130/upload/Package",
         export_file_path="../output/image_url/package_negative.txt")
 
 
@@ -55,7 +55,7 @@ def run_human_positive():
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "positive"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Human/Human/",
+        replace_add="http://192.168.5.130/upload/Human/Human",
         export_file_path="../output/image_url/human_positive.txt")
 
 
@@ -66,7 +66,7 @@ def run_human_negative():
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "negative"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Human/Human/",
+        replace_add="http://192.168.5.130/upload/Human/Human",
         export_file_path="../output/image_url/human_negative.txt")
 
 
@@ -77,7 +77,7 @@ def run_pet_positive():
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "posi"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Pet/Pet/",
+        replace_add="http://192.168.5.130/upload/Pet/Pet",
         export_file_path="../output/image_url/pet_positive.txt")
 
 
@@ -88,7 +88,7 @@ def run_pet_negative():
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "negative"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Pet/Pet/",
+        replace_add="http://192.168.5.130/upload/Pet/Pet",
         export_file_path="../output/image_url/pet_negative.txt")
 
 
@@ -99,7 +99,7 @@ def run_vehicle_positive():
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "positive"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Vehicle/",
+        replace_add="http://192.168.5.130/upload/Vehicle",
         export_file_path="../output/image_url/vehicle_positive.txt")
 
 
@@ -110,7 +110,7 @@ def run_vehicle_negative():
         path_remoeve_keywords=REMOVE_KEYWORDS,
         path_keep_keywords=["jpg", "negative"],
         replace_remove=path,
-        replace_add="http://192.168.5.130/upload/Vehicle/",
+        replace_add="http://192.168.5.130/upload/Vehicle",
         export_file_path="../output/image_url/vehicle_negative.txt")
 
 
