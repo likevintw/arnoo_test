@@ -1,6 +1,6 @@
-[submodule "request_handler"]
-	path = request_handler
-	url = git@github.com:likevintw/request_handler.git
 [submodule "file_handler"]
 	path = file_handler
 	url = git@github.com:likevintw/file_handler.git
+[submodule "request_handler"]
+	path = request_handler
+	url = git@github.com:likevintw/request_handler.git
