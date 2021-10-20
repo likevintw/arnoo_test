@@ -25,7 +25,15 @@ IMAGE_URL = {
 }
 
 
-def run_accuracy_threshold_test(algorithm_name, project_name, image_url_list_path, threshold, monitor):
+
+def run_accuracy_threshold_test(
+    algorithm_name, 
+    project_name, 
+    image_url_list_path, 
+    threshold, 
+    monitor,
+    result_file_path):
+    
     project = algorithm_name
     structure = arnoo_request_handler.ArnooRequestStructure()
 
@@ -69,7 +77,9 @@ def run_accuracy_threshold_test(algorithm_name, project_name, image_url_list_pat
         thread_times=1,
         monitor=monitor,
         headers=headers,
-        body=body)
+        body=body,
+    )
+    handler.result_file_path=result_file_path
 
     #
     structure.run_arnoo_threshold_test(handler)
@@ -81,31 +91,35 @@ def specific_threshold(value=0.7):
     # Vehicle
     run_accuracy_threshold_test(
         algorithm_name="vehicle",
-        project_name="vehicle_positive",
+        project_name="vehicle_positive"+"_"+str(value),
         image_url_list_path="../output/image_url/vehicle_positive.txt",
         threshold=threshold,
-        monitor=True)
+        monitor=True,
+        result_file_path="../output/threshold_result")
     # Package
     run_accuracy_threshold_test(
         algorithm_name="package",
-        project_name="package_positive",
+        project_name="package_positive"+"_"+str(value),
         image_url_list_path="../output/image_url/package_positive.txt",
         threshold=threshold,
-        monitor=True)
+        monitor=True,
+        result_file_path="../output/threshold_result")
     # Human
     run_accuracy_threshold_test(
         algorithm_name="human",
-        project_name="human_positive",
+        project_name="human_positive"+"_"+str(value),
         image_url_list_path="../output/image_url/human_positive.txt",
         threshold=threshold,
-        monitor=True)
+        monitor=True,
+        result_file_path="../output/threshold_result")
     # Pet
     run_accuracy_threshold_test(
         algorithm_name="pet",
-        project_name="pet_positive",
+        project_name="pet_positive"+"_"+str(value),
         image_url_list_path="../output/image_url/pet_positive.txt",
         threshold=threshold,
-        monitor=True)
+        monitor=True,
+        result_file_path="../output/threshold_result")
 
 
 if __name__ == '__main__':
