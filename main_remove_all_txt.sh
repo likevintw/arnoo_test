@@ -1,3 +1,3 @@
-rm  ../output/imgae_url/*.txt
-# rm -i ../output/accuracy_result/*.txt
-# rm -i ../output/threshold_result/*.txt
+rm ../output/image_url/*.txt
+rm ../output/accuracy_result/*.txt
+rm ../output/threshold_result/*.txt
