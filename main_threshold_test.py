@@ -25,7 +25,6 @@ IMAGE_URL = {
 }
 
 
-
 def run_accuracy_threshold_test(
     algorithm_name, 
     project_name, 
