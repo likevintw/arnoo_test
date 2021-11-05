@@ -113,6 +113,25 @@ def run_vehicle_negative():
         replace_add="http://192.168.5.130/upload/Vehicle",
         export_file_path="../output/image_url/vehicle_negative.txt")
 
+def run_flame_negative():
+    path = "../input/flame"
+    get_image_url(
+        input_folder_path=path,
+        path_remoeve_keywords=REMOVE_KEYWORDS,
+        path_keep_keywords=["jpg", "Negative"],
+        replace_remove=path,
+        replace_add="http://192.168.5.130/upload/Flame",
+        export_file_path="../output/image_url/flame_negative.txt")
+
+def run_flame_positive():
+    path = "../input/flame"
+    get_image_url(
+        input_folder_path=path,
+        path_remoeve_keywords=REMOVE_KEYWORDS,
+        path_keep_keywords=["jpg", "Positive"],
+        replace_remove=path,
+        replace_add="http://192.168.5.130/upload/Flame",
+        export_file_path="../output/image_url/flame_positive.txt")
 
 if __name__ == '__main__':
     run_human_positive()
@@ -123,3 +142,5 @@ if __name__ == '__main__':
     run_vehicle_negative()
     run_package_positive()
     run_package_negative()
+    run_flame_positive()
+    run_flame_negative()
