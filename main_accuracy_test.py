@@ -133,6 +133,23 @@ def run_vehicle_negative():
         result_file_path=RESULT_FILE_PATH,
         monitor=True)
 
+def run_flame_positive():
+    run_arnoo_accuracy_test(
+        project_name="flame_positive",
+        service_url=ARNOO_URL,
+        ai_id=AI_ID["flame"],
+        image_url_file_path="../output/image_url/flame_positive.txt",
+        result_file_path=RESULT_FILE_PATH,
+        monitor=True)
+def run_flame_negative():
+    run_arnoo_accuracy_test(
+        project_name="flame_negative",
+        service_url=ARNOO_URL,
+        ai_id=AI_ID["flame"],
+        image_url_file_path="../output/image_url/flame_negative.txt",
+        result_file_path=RESULT_FILE_PATH,
+        monitor=True)
+
 
 if __name__ == '__main__':
 
@@ -151,3 +168,7 @@ if __name__ == '__main__':
     # Package
     run_package_positive()
     run_package_negative()
+
+    # Flame
+    run_flame_positive()
+    run_flame_negative()
